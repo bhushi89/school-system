@@ -35,13 +35,15 @@
     </style>
   </head>
   <body>
-  
+      <a th:href="@{/}" class="site-btn header-btn" style="float:right;width:80px;margin-top:0px">Home</a>
   <br/>
   <br/>
   
   <div class="container">
+
   <div class="col-md-12">
    <div class="col-md-4">
+ 
   </div>
    <div class="col-md-4">
    <form class="form-signin" name="loginForm" action="LoginController" onSubmit="return validateForm()">
@@ -51,7 +53,7 @@
             <div class="input-group-addon">
               <i class="glyphicon glyphicon-user"></i>
             </div>
-            <input type="text" class="form-control" id="mobile_no" name="mobile_no" placeholder="Mobile No" autocomplete="off" />
+            <input type="text" class="form-control" id="username" name="username" placeholder="Mobile No or Email Id" autocomplete="off" />
           </div>
         </div>
 

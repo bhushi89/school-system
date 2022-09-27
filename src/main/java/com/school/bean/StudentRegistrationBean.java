@@ -1,18 +1,11 @@
 package com.school.bean;
 
-
-
-import java.sql.Date;
-import java.time.LocalDateTime;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "m_registration")
@@ -54,9 +47,8 @@ public class StudentRegistrationBean {
 	@Column(name = "created_by")
 	private int created_by;
 	
-
 	@Column(name = "created_at")
-	private LocalDateTime created_at;
+	private String created_at;
 
 	public int getId() {
 		return id;
@@ -130,12 +122,12 @@ public class StudentRegistrationBean {
 		this.created_by = created_by;
 	}
 
-	public LocalDateTime getCreated_at() {
+	public String getCreated_at() {
 		return created_at;
 	}
 
-	public void setCreated_at(LocalDateTime now) {
-		this.created_at = now;
+	public void setCreated_at(String created_at) {
+		this.created_at = created_at;
 	}
 
 
